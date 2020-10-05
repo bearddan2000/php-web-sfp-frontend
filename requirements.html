@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html class="" lang="en"><head prefix="og: http://ogp.me/ns#">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="object" property="og:type">
+<meta content="GitLab" property="og:site_name">
+<meta content="sfp / SFP Frontend Assessment" property="og:title">
+<meta content="SFP GitLab" property="og:description">
+<meta content="https://gitlab.sfp.cc/assets/gitlab_logo-7ae504fe4f68fdebb3c2034e36621930cd36ea87924c11ff65dbcb8ed50dca58.png" property="og:image">
+<meta content="64" property="og:image:width">
+<meta content="64" property="og:image:height">
+<meta content="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment" property="og:url">
+<meta content="summary" property="twitter:card">
+<meta content="sfp / SFP Frontend Assessment" property="twitter:title">
+<meta content="SFP GitLab" property="twitter:description">
+<meta content="https://gitlab.sfp.cc/assets/gitlab_logo-7ae504fe4f68fdebb3c2034e36621930cd36ea87924c11ff65dbcb8ed50dca58.png" property="twitter:image">
+
+<title>sfp / SFP Frontend Assessment · GitLab</title>
+<meta content="SFP GitLab" name="description">
+<link rel="shortcut icon" type="image/png" href="https://gitlab.sfp.cc/assets/favicon-7901bd695fb93edb07975966062049829afb56cf11511236e61bcf425070e36e.png" id="favicon" data-original-href="/assets/favicon-7901bd695fb93edb07975966062049829afb56cf11511236e61bcf425070e36e.png">
+<link rel="stylesheet" media="all" href="requirements_files/application-4a081f9e3a60a0e580cad484d66fbf5a1505ad313280e967.css">
+<link rel="stylesheet" media="print" href="requirements_files/print-74c3df10dad473d66660c828e3aa54ca3bfeac6d8bb70864333140.css">
+
+
+<link rel="stylesheet" media="all" href="requirements_files/white-3144068cf4f603d290f553b653926358ddcd02493b9728f6241768.css">
+<script>
+//<![CDATA[
+window.gon={};gon.api_version="v4";gon.default_avatar_url="https://gitlab.sfp.cc/assets/no_avatar-849f9c04a3a0d0cea2424ae97b27447dc64a7dbfae83c036c45b403392f0e8ba.png";gon.max_file_size=50;gon.asset_host=null;gon.webpack_public_path="/assets/webpack/";gon.relative_url_root="";gon.shortcuts_path="/help/shortcuts";gon.user_color_scheme="white";gon.gitlab_url="https://gitlab.sfp.cc";gon.revision="d18b43a5f5a";gon.gitlab_logo="/assets/gitlab_logo-7ae504fe4f68fdebb3c2034e36621930cd36ea87924c11ff65dbcb8ed50dca58.png";gon.sprite_icons="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg";gon.sprite_file_icons="/assets/file_icons-7262fc6897e02f1ceaf8de43dc33afa5e4f9a2067f4f68ef77dcc87946575e9e.svg";gon.emoji_sprites_css_path="/assets/emoji_sprites-289eccffb1183c188b630297431be837765d9ff4aed6130cf738586fb307c170.css";gon.test_env=false;gon.disable_animations=null;gon.suggested_label_colors={"#0033CC":"UA blue","#428BCA":"Moderate blue","#44AD8E":"Lime green","#A8D695":"Feijoa","#5CB85C":"Slightly desaturated green","#69D100":"Bright green","#004E00":"Very dark lime green","#34495E":"Very dark desaturated blue","#7F8C8D":"Dark grayish cyan","#A295D6":"Slightly desaturated blue","#5843AD":"Dark moderate blue","#8E44AD":"Dark moderate violet","#FFECDB":"Very pale orange","#AD4363":"Dark moderate pink","#D10069":"Strong pink","#CC0033":"Strong red","#FF0000":"Pure red","#D9534F":"Soft red","#D1D100":"Strong yellow","#F0AD4E":"Soft orange","#AD8D43":"Dark moderate orange"};gon.first_day_of_week=0;gon.ee=false;gon.features={"snippetsVue":false,"monacoSnippets":false,"monacoBlobs":false,"monacoCi":false};
+//]]>
+</script>
+
+
+<script src="requirements_files/runtime.js" defer="defer"></script>
+<script src="requirements_files/main.js" defer="defer"></script>
+<script src="requirements_files/commonspages_002.js" defer="defer"></script>
+<script src="requirements_files/commonspages.js" defer="defer"></script>
+<script src="requirements_files/pages.js" defer="defer"></script>
+
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="AeTcv5TphyplLHcYxWACiY2g/zDBdeqDSRH7YIIJ2in6Tojq9DUxoZysztzO/sWJ8MrUZiaR4oPbORK3WpUuIA==">
+
+<meta content="origin-when-cross-origin" name="referrer">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+<meta content="#474D57" name="theme-color">
+<link rel="apple-touch-icon" type="image/x-icon" href="https://gitlab.sfp.cc/assets/touch-icon-iphone-5a9cee0e8a51212e70b90c87c12f382c428870c0ff67d1eb034d884b78d2dae7.png">
+<link rel="apple-touch-icon" type="image/x-icon" href="https://gitlab.sfp.cc/assets/touch-icon-ipad-a6eec6aeb9da138e507593b464fdac213047e49d3093fc30e90d9a995df83ba3.png" sizes="76x76">
+<link rel="apple-touch-icon" type="image/x-icon" href="https://gitlab.sfp.cc/assets/touch-icon-iphone-retina-72e2aadf86513a56e050e7f0f2355deaa19cc17ed97bbe5147847f2748e5a3e3.png" sizes="120x120">
+<link rel="apple-touch-icon" type="image/x-icon" href="https://gitlab.sfp.cc/assets/touch-icon-ipad-retina-8ebe416f5313483d9c1bc772b5bbe03ecad52a54eba443e5215a22caed2a16a2.png" sizes="152x152">
+<link color="rgb(226, 67, 41)" href="https://gitlab.sfp.cc/assets/logo-d36b5212042cebc89b96df4bf6ac24e43db316143e89926c0db839ff694d2de4.svg" rel="mask-icon">
+<meta content="/assets/msapplication-tile-1196ec67452f618d39cdd85e2e3a542f76574c071051ae7effbfde01710eb17d.png" name="msapplication-TileImage">
+<meta content="#30353E" name="msapplication-TileColor">
+<link rel="alternate" type="application/atom+xml" title="SFP Frontend Assessment activity" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment.atom">
+
+
+
+
+<style type="text/css">.toasted{padding:0 20px}.toasted.rounded{border-radius:24px}.toasted .primary,.toasted.toasted-primary{border-radius:2px;min-height:38px;line-height:1.1em;background-color:#353535;padding:0 20px;font-size:15px;font-weight:300;color:#fff;box-shadow:0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)}.toasted .primary.success,.toasted.toasted-primary.success{background:#4caf50}.toasted .primary.error,.toasted.toasted-primary.error{background:#f44336}.toasted .primary.info,.toasted.toasted-primary.info{background:#3f51b5}.toasted .primary .action,.toasted.toasted-primary .action{color:#a1c2fa}.toasted.bubble{border-radius:30px;min-height:38px;line-height:1.1em;background-color:#ff7043;padding:0 20px;font-size:15px;font-weight:300;color:#fff;box-shadow:0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)}.toasted.bubble.success{background:#4caf50}.toasted.bubble.error{background:#f44336}.toasted.bubble.info{background:#3f51b5}.toasted.bubble .action{color:#8e2b0c}.toasted.outline{border-radius:30px;min-height:38px;line-height:1.1em;background-color:#fff;border:1px solid #676767;padding:0 20px;font-size:15px;color:#676767;box-shadow:0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);font-weight:700}.toasted.outline.success{color:#4caf50;border-color:#4caf50}.toasted.outline.error{color:#f44336;border-color:#f44336}.toasted.outline.info{color:#3f51b5;border-color:#3f51b5}.toasted.outline .action{color:#607d8b}.toasted-container{position:fixed;z-index:10000}.toasted-container,.toasted-container.full-width{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column}.toasted-container.full-width{max-width:86%;width:100%}.toasted-container.full-width.fit-to-screen{min-width:100%}.toasted-container.full-width.fit-to-screen .toasted:first-child{margin-top:0}.toasted-container.full-width.fit-to-screen.top-right{top:0;right:0}.toasted-container.full-width.fit-to-screen.top-left{top:0;left:0}.toasted-container.full-width.fit-to-screen.top-center{top:0;left:0;-webkit-transform:translateX(0);transform:translateX(0)}.toasted-container.full-width.fit-to-screen.bottom-right{right:0;bottom:0}.toasted-container.full-width.fit-to-screen.bottom-left{left:0;bottom:0}.toasted-container.full-width.fit-to-screen.bottom-center{left:0;bottom:0;-webkit-transform:translateX(0);transform:translateX(0)}.toasted-container.top-right{top:10%;right:7%}.toasted-container.top-left{top:10%;left:7%}.toasted-container.top-center{top:10%;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}.toasted-container.bottom-right{right:5%;bottom:7%}.toasted-container.bottom-left{left:5%;bottom:7%}.toasted-container.bottom-center{left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);bottom:7%}.toasted-container.bottom-left .toasted,.toasted-container.top-left .toasted{float:left}.toasted-container.bottom-right .toasted,.toasted-container.top-right .toasted{float:right}.toasted-container .toasted{top:35px;width:auto;clear:both;margin-top:10px;position:relative;max-width:100%;height:auto;word-break:normal;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:justify;justify-content:space-between;box-sizing:inherit}.toasted-container .toasted .fa,.toasted-container .toasted .fab,.toasted-container .toasted .far,.toasted-container .toasted .fas,.toasted-container .toasted .material-icons,.toasted-container .toasted .mdi{margin-right:.5rem;margin-left:-.4rem}.toasted-container .toasted .fa.after,.toasted-container .toasted .fab.after,.toasted-container .toasted .far.after,.toasted-container .toasted .fas.after,.toasted-container .toasted .material-icons.after,.toasted-container .toasted .mdi.after{margin-left:.5rem;margin-right:-.4rem}.toasted-container .toasted .action{text-decoration:none;font-size:.8rem;padding:8px;margin:5px -7px 5px 7px;border-radius:3px;text-transform:uppercase;letter-spacing:.03em;font-weight:600;cursor:pointer}.toasted-container .toasted .action.icon{padding:4px;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}.toasted-container .toasted .action.icon .fa,.toasted-container .toasted .action.icon .material-icons,.toasted-container .toasted .action.icon .mdi{margin-right:0;margin-left:4px}.toasted-container .toasted .action.icon:hover{text-decoration:none}.toasted-container .toasted .action:hover{text-decoration:underline}@media only screen and (max-width:600px){#toasted-container{min-width:100%}#toasted-container .toasted:first-child{margin-top:0}#toasted-container.top-right{top:0;right:0}#toasted-container.top-left{top:0;left:0}#toasted-container.top-center{top:0;left:0;-webkit-transform:translateX(0);transform:translateX(0)}#toasted-container.bottom-right{right:0;bottom:0}#toasted-container.bottom-left{left:0;bottom:0}#toasted-container.bottom-center{left:0;bottom:0;-webkit-transform:translateX(0);transform:translateX(0)}#toasted-container.bottom-center,#toasted-container.top-center{-ms-flex-align:stretch!important;align-items:stretch!important}#toasted-container.bottom-left .toasted,#toasted-container.bottom-right .toasted,#toasted-container.top-left .toasted,#toasted-container.top-right .toasted{float:none}#toasted-container .toasted{border-radius:0}}</style><script charset="utf-8" src="requirements_files/vendorsselect2.js"></script><script charset="utf-8" src="requirements_files/30.js"></script><script charset="utf-8" src="requirements_files/29.js"></script><style type="text/css">
+.commit[data-v-079796d8] {
+  min-height: 4.75rem;
+}
+</style></head>
+
+<body class="ui-indigo tab-width-8  gl-browser-firefox gl-platform-linux" data-find-file="/sfp/sfp-frontend-assessment/-/find_file/master" data-group="" data-namespace-id="13" data-page="projects:show" data-page-type-id="sfp-frontend-assessment" data-project="sfp-frontend-assessment" data-project-id="461">
+
+<script>
+//<![CDATA[
+gl = window.gl || {};
+gl.client = {"isFirefox":true,"isLinux":true};
+
+
+//]]>
+</script>
+
+
+<header class="navbar navbar-gitlab navbar-expand-sm js-navbar" data-qa-selector="navbar">
+<a class="sr-only gl-accessibility" href="#content-body" tabindex="1">Skip to content</a>
+<div class="container-fluid">
+<div class="header-content">
+<div class="title-container">
+<h1 class="title">
+<a title="Dashboard" id="logo" href="https://gitlab.sfp.cc/"><img class="brand-header-logo js-lazy-loaded qa-js-lazy-loaded" src="requirements_files/FINAL_LOGO_-_black__stroke__1_.png">
+</a></h1>
+<ul class="list-unstyled navbar-sub-nav">
+<li class="home"><a title="Projects" class="dashboard-shortcuts-projects" href="https://gitlab.sfp.cc/explore">Projects
+</a></li><li class=""><a title="Groups" class="dashboard-shortcuts-groups" href="https://gitlab.sfp.cc/explore/groups">Groups
+</a></li><li class=""><a title="Snippets" class="dashboard-shortcuts-snippets" href="https://gitlab.sfp.cc/explore/snippets">Snippets
+</a></li><li>
+<a title="About GitLab CE" href="https://gitlab.sfp.cc/help">Help</a>
+</li>
+</ul>
+
+</div>
+<div class="navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="nav-item d-none d-lg-block m-auto">
+<div class="search search-form" data-track-event="activate_form_input" data-track-label="navbar_search" data-track-value="">
+<form class="form-inline" action="/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓"><div class="search-input-container">
+<div class="search-input-wrap">
+<div class="dropdown" data-url="/search/autocomplete">
+<input type="search" name="search" id="search" placeholder="Search or jump to…" class="search-input dropdown-menu-toggle no-outline js-search-dashboard-options js-autocomplete-disabled" spellcheck="false" tabindex="1" autocomplete="off" data-issues-path="/dashboard/issues" data-mr-path="/dashboard/merge_requests" data-qa-selector="search_term_field" aria-label="Search or jump to…">
+<button class="hidden js-dropdown-search-toggle" data-toggle="dropdown" type="button"></button>
+<div class="dropdown-menu dropdown-select js-dashboard-search-options">
+<div class="dropdown-content"><ul>
+<li class="dropdown-menu-empty-item">
+<a>
+Loading...
+</a>
+</li>
+</ul>
+</div><div class="dropdown-loading"><i aria-hidden="true" data-hidden="true" class="fa fa-spinner fa-spin"></i></div>
+</div>
+<svg class="s16 search-icon"><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#search"></use></svg>
+<svg class="s16 clear-icon js-clear-input"><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#close"></use></svg>
+</div>
+</div>
+</div>
+<input type="hidden" name="group_id" id="group_id" class="js-search-group-options">
+<input type="hidden" name="project_id" id="search_project_id" value="461" class="js-search-project-options" data-project-path="sfp-frontend-assessment" data-name="SFP Frontend Assessment" data-issues-path="/sfp/sfp-frontend-assessment/issues" data-mr-path="/sfp/sfp-frontend-assessment/-/merge_requests" data-issues-disabled="true">
+<input type="hidden" name="search_code" id="search_code" value="true">
+<input type="hidden" name="repository_ref" id="repository_ref" value="master">
+<input type="hidden" name="nav_source" id="nav_source" value="navbar">
+<div class="search-autocomplete-opts hide" data-autocomplete-path="/search/autocomplete" data-autocomplete-project-id="461" data-autocomplete-project-ref="master"></div>
+</form></div>
+
+</li>
+<li class="nav-item d-inline-block d-lg-none">
+<a title="Search" aria-label="Search" data-toggle="tooltip" data-placement="bottom" data-container="body" href="https://gitlab.sfp.cc/search?project_id=461"><svg class="s16"><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#search"></use></svg>
+</a></li>
+<li class="nav-item header-help dropdown d-none d-md-block">
+<a class="header-help-dropdown-toggle" data-toggle="dropdown" href="https://gitlab.sfp.cc/help"><svg class="s16"><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#question"></use></svg>
+<svg class="caret-down"><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#angle-down"></use></svg>
+</a><div class="dropdown-menu dropdown-menu-right">
+<ul>
+<li>
+<a href="https://gitlab.sfp.cc/help">Help</a>
+</li>
+<li>
+<a href="https://about.gitlab.com/getting-help/">Support</a>
+</li>
+<li>
+<button class="js-shortcuts-modal-trigger" type="button">
+Keyboard shortcuts
+<span aria-hidden="" class="text-secondary float-right">?</span>
+</button>
+</li>
+
+<li class="divider"></li>
+<li>
+<a href="https://about.gitlab.com/submit-feedback">Submit feedback</a>
+</li>
+<li>
+<a target="_blank" class="text-nowrap" href="https://about.gitlab.com/contributing">Contribute to GitLab
+</a>
+</li>
+
+</ul>
+
+</div>
+</li>
+<li class="nav-item">
+<div>
+<a class="btn btn-sign-in" href="https://gitlab.sfp.cc/users/sign_in?redirect_to_referer=yes">Sign in</a>
+</div>
+</li>
+</ul>
+</div>
+<button class="navbar-toggler d-block d-sm-none" type="button">
+<span class="sr-only">Toggle navigation</span>
+<svg class="s12 more-icon js-navbar-toggle-right"><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#ellipsis_h"></use></svg>
+<svg class="s12 close-icon js-navbar-toggle-left"><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#close"></use></svg>
+</button>
+</div>
+</div>
+</header>
+
+<div class="layout-page page-with-contextual-sidebar">
+<div class="nav-sidebar">
+<div class="nav-sidebar-inner-scroll">
+<div class="context-header">
+<a title="SFP Frontend Assessment" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment"><div class="avatar-container rect-avatar s40 project-avatar">
+<div class="avatar s40 avatar-tile identicon bg7">S</div>
+</div>
+<div class="sidebar-context-title">
+SFP Frontend Assessment
+</div>
+</a></div>
+<ul class="sidebar-top-level-items qa-project-sidebar">
+<li class="home active"><a class="shortcuts-project rspec-project-link" data-qa-selector="project_link" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment"><div class="nav-icon-container">
+<svg><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#home"></use></svg>
+</div>
+<span class="nav-item-name">
+Project overview
+</span>
+</a><ul class="sidebar-sub-level-items">
+<li class="fly-out-top-item active"><a href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment"><strong class="fly-out-top-item-name">
+Project overview
+</strong>
+</a></li><li class="divider fly-out-top-item"></li>
+<li class="active"><a title="Project details" class="shortcuts-project" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment"><span>Details</span>
+</a></li><li class=""><a title="Activity" class="shortcuts-project-activity" data-qa-selector="activity_link" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/activity"><span>Activity</span>
+</a></li><li class=""><a title="Releases" class="shortcuts-project-releases" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/releases"><span>Releases</span>
+</a></li></ul>
+</li><li class=""><a class="shortcuts-tree qa-project-menu-repo" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/tree/master"><div class="nav-icon-container">
+<svg><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#doc-text"></use></svg>
+</div>
+<span class="nav-item-name" id="js-onboarding-repo-link">
+Repository
+</span>
+</a><ul class="sidebar-sub-level-items">
+<li class="fly-out-top-item"><a href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/tree/master"><strong class="fly-out-top-item-name">
+Repository
+</strong>
+</a></li><li class="divider fly-out-top-item"></li>
+<li class=""><a href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/tree/master">Files
+</a></li><li class=""><a id="js-onboarding-commits-link" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/commits/master">Commits
+</a></li><li class=""><a class="qa-branches-link" id="js-onboarding-branches-link" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/branches">Branches
+</a></li><li class=""><a href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/tags">Tags
+</a></li><li class=""><a href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/graphs/master">Contributors
+</a></li><li class=""><a href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/network/master">Graph
+</a></li><li class=""><a href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/compare?from=master&amp;to=master">Compare
+</a></li>
+</ul>
+</li>
+
+<li class=""><a href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/graphs/master/charts"><div class="nav-icon-container">
+<svg><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#chart"></use></svg>
+</div>
+<span class="nav-item-name" data-qa-selector="analytics_link">
+Analytics
+</span>
+</a><ul class="sidebar-sub-level-items" data-qa-selector="analytics_sidebar_submenu">
+<li class=""><a class="shortcuts-repository-charts" title="Repository Analytics" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/graphs/master/charts"><span>Repository Analytics</span>
+</a></li><li class=""><a class="shortcuts-project-cycle-analytics" title="Value Stream Analytics" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/value_stream_analytics"><span>Value Stream Analytics</span>
+</a></li></ul>
+</li>
+<li class=""><a title="Members" class="shortcuts-tree" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/settings/members"><div class="nav-icon-container">
+<svg><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#users"></use></svg>
+</div>
+<span class="nav-item-name">
+Members
+</span>
+</a><ul class="sidebar-sub-level-items is-fly-out-only">
+<li class="fly-out-top-item"><a href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/project_members"><strong class="fly-out-top-item-name">
+Members
+</strong>
+</a></li></ul>
+</li><a class="toggle-sidebar-button js-toggle-sidebar qa-toggle-sidebar rspec-toggle-sidebar" role="button" title="Toggle sidebar" type="button">
+<svg class="icon-angle-double-left"><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#angle-double-left"></use></svg>
+<svg class="icon-angle-double-right"><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#angle-double-right"></use></svg>
+<span class="collapse-text">Collapse sidebar</span>
+</a>
+<button name="button" type="button" class="close-nav-button"><svg class="s16"><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#close"></use></svg>
+<span class="collapse-text">Close sidebar</span>
+</button>
+<li class="hidden">
+<a title="Activity" class="shortcuts-project-activity" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/activity"><span>
+Activity
+</span>
+</a></li>
+<li class="hidden">
+<a title="Network" class="shortcuts-network" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/network/master">Graph
+</a></li>
+<li class="hidden">
+<a title="Commits" class="shortcuts-commits" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/commits/master">Commits
+</a></li>
+</ul>
+</div>
+</div>
+
+<div class="content-wrapper">
+
+<div class="mobile-overlay"></div>
+<div class="alert-wrapper">
+
+
+
+
+
+
+
+
+<nav class="breadcrumbs container-fluid container-limited limit-container-width" role="navigation">
+<div class="breadcrumbs-container">
+<button name="button" type="button" class="toggle-mobile-nav"><span class="sr-only">Open sidebar</span>
+<i aria-hidden="true" data-hidden="true" class="fa fa-bars"></i>
+</button><div class="breadcrumbs-links js-title-container">
+<ul class="list-unstyled breadcrumbs-list js-breadcrumbs-list">
+<li><a class="group-path breadcrumb-item-text js-breadcrumb-item-text " href="https://gitlab.sfp.cc/sfp"><img class="avatar-tile js-lazy-loaded qa-js-lazy-loaded" src="requirements_files/SFP_LOGO.png" width="15" height="15">sfp</a><svg class="s8 breadcrumbs-list-angle"><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#angle-right"></use></svg></li> <li><a href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment"><span class="breadcrumb-item-text js-breadcrumb-item-text">SFP Frontend Assessment</span></a><svg class="s8 breadcrumbs-list-angle"><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#angle-right"></use></svg></li>
+
+<li>
+<h2 class="breadcrumbs-sub-title"><a href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment">Details</a></h2>
+</li>
+</ul>
+</div>
+
+</div>
+</nav>
+
+<div class="d-flex"></div>
+</div>
+<div class="container-fluid container-limited limit-container-width">
+<div class="content" id="content-body">
+<div class="flash-container flash-container-page sticky">
+<div class="flash-notice mb-2">
+<svg class="s16 align-middle mr-1"><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#information-o"></use></svg>
+<span>Project 'sfp/sfp-frontend-assessment-2.0' was moved to 
+'sfp/sfp-frontend-assessment'. Please update any links and bookmarks 
+that may still have the old path.</span>
+<div class="close-icon-wrapper js-close-icon">
+<svg class="s16 close-icon"><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#close"></use></svg>
+</div>
+</div>
+</div>
+
+
+<div class="limit-container-width">
+
+<div class="js-show-on-project-root project-home-panel">
+<div class="row append-bottom-8">
+<div class="home-panel-title-row col-md-12 col-lg-6 d-flex">
+<div class="avatar-container rect-avatar s64 home-panel-avatar append-right-default float-none">
+<div class="avatar avatar-tile s64 identicon bg7">S</div>
+</div>
+<div class="d-flex flex-column flex-wrap align-items-baseline">
+<div class="d-inline-flex align-items-baseline">
+<h1 class="home-panel-title prepend-top-8 append-bottom-5" data-qa-selector="project_name_content">
+SFP Frontend Assessment
+<span class="visibility-icon text-secondary prepend-left-4 has-tooltip" data-container="body" title="Public - The project can be accessed without any authentication.">
+<i aria-hidden="true" data-hidden="true" class="fa fa-globe icon"></i>
+</span>
+</h1>
+</div>
+<div class="home-panel-metadata d-flex flex-wrap text-secondary">
+<span class="text-secondary">
+Project ID: 461
+</span>
+</div>
+</div>
+</div>
+<div class="project-repo-buttons col-md-12 col-lg-6 d-inline-flex flex-wrap justify-content-lg-end">
+<div class="count-buttons d-inline-flex">
+<div class="count-badge d-inline-flex align-item-stretch append-right-8">
+<a class="btn btn-default btn-xs has-tooltip count-badge-button d-flex align-items-center star-btn" title="You must sign in to star a project" href="https://gitlab.sfp.cc/users/sign_in"><svg class="icon"><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#star-o"></use></svg>
+<span>Star</span>
+</a><span class="star-count count-badge-count d-flex align-items-center">
+<a title="Starrers" class="count" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/starrers">0
+</a></span>
+</div>
+
+
+</div>
+</div>
+</div>
+<nav class="project-stats">
+<div class="nav-links quick-links">
+<ul class="nav">
+<li class="nav-item">
+<a class="nav-link stat-link d-flex align-items-center" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/commits/master"><svg class="s16 icon append-right-4"><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#commit"></use></svg><strong class="project-stat-value">17</strong> Commits</a></li>
+<li class="nav-item">
+<a class="nav-link stat-link d-flex align-items-center" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/branches"><svg class="s16 icon append-right-4"><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#branch"></use></svg><strong class="project-stat-value">1</strong> Branch</a></li>
+<li class="nav-item">
+<a class="nav-link stat-link d-flex align-items-center" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/tags"><svg class="s16 icon append-right-4"><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#label"></use></svg><strong class="project-stat-value">0</strong> Tags</a></li>
+<li class="nav-item">
+<a class="nav-link stat-link d-flex align-items-center" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/tree/master"><svg class="s16 icon append-right-4"><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#doc-code"></use></svg><strong class="project-stat-value">20.3 MB</strong> Files</a></li>
+</ul>
+
+</div>
+</nav>
+<div class="home-panel-home-desc mt-1">
+
+</div>
+</div>
+
+<div class="progress repository-languages-bar js-show-on-project-root"><div class="progress-bar has-tooltip" style="width: 99.0%; background-color:#f1e05a" data-html="true" title="" data-original-title="&lt;span class=&quot;repository-language-bar-tooltip-language&quot;&gt;JavaScript&lt;/span&gt;&amp;nbsp;&lt;span class=&quot;repository-language-bar-tooltip-share&quot;&gt;99.0%&lt;/span&gt;"></div><div class="progress-bar has-tooltip" style="width: 0.66%; background-color:#2c3e50" data-html="true" title="&lt;span class=&quot;repository-language-bar-tooltip-language&quot;&gt;Vue&lt;/span&gt;&amp;nbsp;&lt;span class=&quot;repository-language-bar-tooltip-share&quot;&gt;0.7%&lt;/span&gt;"></div><div class="progress-bar has-tooltip" style="width: 0.29%; background-color:#563d7c" data-html="true" title="&lt;span class=&quot;repository-language-bar-tooltip-language&quot;&gt;CSS&lt;/span&gt;&amp;nbsp;&lt;span class=&quot;repository-language-bar-tooltip-share&quot;&gt;0.3%&lt;/span&gt;"></div><div class="progress-bar has-tooltip" style="width: 0.05%; background-color:#e34c26" data-html="true" title="&lt;span class=&quot;repository-language-bar-tooltip-language&quot;&gt;HTML&lt;/span&gt;&amp;nbsp;&lt;span class=&quot;repository-language-bar-tooltip-share&quot;&gt;0.1%&lt;/span&gt;"></div></div>
+
+
+
+<div class="project-show-files">
+<div class="tree-holder clearfix" id="tree-holder">
+<div class="nav-block">
+<div class="tree-ref-container">
+<div class="tree-ref-holder">
+<form class="project-refs-form" action="/sfp/sfp-frontend-assessment/-/refs/switch" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="destination" id="destination" value="tree">
+<input type="hidden" name="path" id="path" value="">
+<div class="dropdown">
+<button class="dropdown-menu-toggle js-project-refs-dropdown qa-branches-select" type="button" data-toggle="dropdown" data-selected="master" data-ref="master" data-refs-url="/sfp/sfp-frontend-assessment/refs?sort=updated_desc" data-field-name="ref" data-submit-form-on-click="true" data-visit="true"><span class="dropdown-toggle-text ">master</span><i aria-hidden="true" data-hidden="true" class="fa fa-chevron-down"></i></button>
+<div class="dropdown-menu dropdown-menu-paging dropdown-menu-selectable git-revision-dropdown qa-branches-dropdown">
+<div class="dropdown-page-one">
+<div class="dropdown-title"><span>Switch branch/tag</span><button class="dropdown-title-button dropdown-menu-close" aria-label="Close" type="button"><i aria-hidden="true" data-hidden="true" class="fa fa-times dropdown-menu-close-icon"></i></button></div>
+<div class="dropdown-input"><input type="search" id="" class="dropdown-input-field qa-dropdown-input-field" placeholder="Search branches and tags" autocomplete="off"><i aria-hidden="true" data-hidden="true" class="fa fa-search dropdown-input-search"></i><i aria-hidden="true" data-hidden="true" role="button" class="fa fa-times dropdown-input-clear js-dropdown-input-clear"></i></div>
+<div class="dropdown-content"></div>
+<div class="dropdown-loading"><i aria-hidden="true" data-hidden="true" class="fa fa-spinner fa-spin"></i></div>
+</div>
+</div>
+</div>
+</form>
+</div>
+<nav aria-label="Files breadcrumb"><ol class="breadcrumb repo-breadcrumb"><li class="breadcrumb-item"><a href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/tree/master/" class="" aria-current="page">
+        sfp-frontend-assessment
+      </a></li> <!----></ol></nav>
+</div>
+<div class="gl-font-size-0 tree-controls"><a href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/commits/master/" class="gl-link btn">History</a>
+<a class="btn shortcuts-find-file" rel="nofollow" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/find_file/master"><i aria-hidden="true" data-hidden="true" class="fa fa-search"></i>
+<span>Find file</span>
+</a><div class="project-action-button dropdown inline">
+<button aria-label="Download" class="btn has-tooltip" data-qa-selector="download_source_code_button" data-display="static" data-toggle="dropdown" title="Download">
+<svg><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#download"></use></svg>
+<span class="sr-only">Select Archive Format</span>
+<svg><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#chevron-down"></use></svg>
+</button>
+<div class="dropdown-menu dropdown-menu-right" role="menu">
+<section>
+<h5 class="m-0 dropdown-bold-header">Download source code</h5>
+<div class="dropdown-menu-content">
+<div class="btn-group ml-0 w-100">
+<a rel="nofollow" download="" class="btn btn-xs btn-primary" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/archive/master/sfp-frontend-assessment-master.zip">zip</a>
+<a rel="nofollow" download="" class="btn btn-xs " href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/archive/master/sfp-frontend-assessment-master.tar.gz">tar.gz</a>
+<a rel="nofollow" download="" class="btn btn-xs " href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/archive/master/sfp-frontend-assessment-master.tar.bz2">tar.bz2</a>
+<a rel="nofollow" download="" class="btn btn-xs " href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/archive/master/sfp-frontend-assessment-master.tar">tar</a>
+</div>
+
+</div>
+</section>
+<!---->
+</div>
+</div><div class="project-clone-holder d-block d-md-none mt-sm-2 mt-md-0">
+<div class="btn-group mobile-git-clone js-mobile-git-clone btn-block">
+<button class="btn btn-primary flex-fill bold justify-content-center input-group-text clone-dropdown-btn js-clone-dropdown-label" data-toggle="tooltip" data-placement="bottom" data-container="body" data-button-text="Copy HTTPS clone URL" data-hide-button-icon="true" data-class="btn-primary flex-fill bold justify-content-center input-group-text clone-dropdown-btn js-clone-dropdown-label" data-clipboard-text="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment.git" type="button" title="Copy" aria-label="Copy">Copy HTTPS clone URL</button>
+<button class="btn btn-primary dropdown-toggle js-dropdown-toggle flex-grow-0 d-flex-center w-auto ml-0" data-toggle="dropdown" type="button">
+<svg class="dropdown-btn-icon icon"><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#chevron-down"></use></svg>
+</button>
+<ul class="dropdown-menu dropdown-menu-selectable dropdown-menu-right clone-options-dropdown" data-dropdown="">
+<li>
+<a class="copy ssh clone url-selector is-active" href="https://gitlab.sfp.cc/sfp/git@gitlab.sfp.cc:sfp/sfp-frontend-assessment.git" data-clone-type="ssh"><strong class="dropdown-menu-inner-title">Copy SSH clone URL</strong><span class="dropdown-menu-inner-content">git@gitlab.sfp.cc:sfp/sfp-frontend-assessment.git</span></a>
+</li>
+<li>
+<a class="copy https clone url-selector " href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment.git" data-clone-type="http"><strong class="dropdown-menu-inner-title">Copy HTTPS clone URL</strong><span class="dropdown-menu-inner-content">https://gitlab.sfp.cc/sfp/sfp-frontend-assessment.git</span></a>
+</li>
+
+</ul>
+</div>
+
+</div><div class="project-clone-holder d-none d-md-inline-block">
+<div class="git-clone-holder js-git-clone-holder">
+<a class="btn btn-primary clone-dropdown-btn qa-clone-dropdown" data-toggle="dropdown" href="#" id="clone-dropdown">
+<span class="append-right-4 js-clone-dropdown-label">
+Clone
+</span>
+<svg class="icon"><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#chevron-down"></use></svg>
+</a>
+<ul class="clone-options-dropdown dropdown-menu dropdown-menu-large dropdown-menu-right dropdown-menu-selectable p-3 qa-clone-options">
+<li>
+<label class="label-bold">
+Clone with SSH
+</label>
+<div class="input-group">
+<input type="text" name="ssh_project_clone" id="ssh_project_clone" value="git@gitlab.sfp.cc:sfp/sfp-frontend-assessment.git" class="js-select-on-focus form-control qa-ssh-clone-url" readonly="readonly" aria-label="Project clone URL">
+<div class="input-group-append">
+<button class="btn input-group-text btn-default btn-clipboard" data-toggle="tooltip" data-placement="bottom" data-container="body" data-title="Copy URL" data-class="input-group-text btn-default btn-clipboard" data-clipboard-target="#ssh_project_clone" type="button" title="Copy URL" aria-label="Copy URL"><svg><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#copy-to-clipboard"></use></svg></button>
+
+</div>
+</div>
+</li>
+<li class="pt-2">
+<label class="label-bold">
+Clone with HTTPS
+</label>
+<div class="input-group">
+<input type="text" name="http_project_clone" id="http_project_clone" value="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment.git" class="js-select-on-focus form-control qa-http-clone-url" readonly="readonly" aria-label="Project clone URL">
+<div class="input-group-append">
+<button class="btn input-group-text btn-default btn-clipboard" data-toggle="tooltip" data-placement="bottom" data-container="body" data-title="Copy URL" data-class="input-group-text btn-default btn-clipboard" data-clipboard-target="#http_project_clone" type="button" title="Copy URL" aria-label="Copy URL"><svg><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#copy-to-clipboard"></use></svg></button>
+
+</div>
+</div>
+</li>
+
+</ul>
+</div>
+
+</div></div>
+
+</div>
+<div data-v-079796d8="" class="info-well d-none d-sm-flex project-last-commit commit p-3"><span data-v-079796d8="" class="avatar-cell user-avatar-link"><img data-v-079796d8="" src="requirements_files/7d83bb34d2615f9e0b723f9b268bef12.png" class="avatar s40" width="40" height="40"></span> <div data-v-079796d8="" class="commit-detail flex-list"><div data-v-079796d8="" class="commit-content qa-commit-content"><a data-v-079796d8="" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/commit/cc681448a01b19d6825ad8502fbf7f226a43b6ab" class="gl-link commit-row-message item-title">
+          boilerplate code added
+        </a> <!----> <div data-v-079796d8="" class="committer">
+            Alec LeFors
+          
+          authored
+          <time data-v-079796d8="" title="Jul 21, 2020 4:03pm EDT" class="">1 week ago</time></div> <!----></div> <div data-v-079796d8="" class="commit-actions flex-row"><!----> <!----> <div data-v-079796d8="" class="commit-sha-group d-flex"><div data-v-079796d8="" class="label label-monospace monospace">
+            cc681448
+          </div> <button data-v-079796d8="" title="Copy commit SHA" data-clipboard-text="cc681448a01b19d6825ad8502fbf7f226a43b6ab" type="button" class="btn btn-secondary btn-md btn-default"><svg class="gl-icon s16"><use href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#copy-to-clipboard"></use></svg></button></div></div></div></div>
+<div class="append-bottom-default js-show-on-project-root project-buttons">
+<ul class="nav">
+<li class="nav-item">
+<a class="nav-link btn btn-default d-flex align-items-center" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/blob/master/README.md"><svg class="s16 icon append-right-4"><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#doc-text"></use></svg>README</a></li>
+<li class="nav-item">
+<div class="stat-text d-flex align-items-center"><svg class="s16 icon append-right-4"><use xlink:href="/assets/icons-2206b8b510dd8a2edccabbd872bdecb67fa80554b54d351d80c5b056d048670e.svg#scale"></use></svg><span class="project-stat-value">No license. All rights reserved</span></div>
+</li>
+</ul>
+
+</div>
+<div><div class="tree-content-holder"><div class="table-holder bordered-box"><table aria-label="Files, directories, and submodules in the path / for commit reference master" aria-live="polite" data-qa-selector="file_tree_table" class="table tree-table"><thead><tr><th id="name" scope="col">Name</th> <th id="last-commit" scope="col" class="d-none d-sm-table-cell">Last commit</th> <th id="last-update" scope="col" class="text-right">Last update</th></tr></thead> <tbody><tr class="tree-item" style="display: none;"><td colspan="3" class="tree-item-file-name"><a href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/tree/master/" class="" aria-label="Go to parent">
+      ..
+    </a></td></tr> <tr class="tree-item file_gid://gitlab/Gitlab::Graphql::Representation::TreeEntry/7bf21e9d50264e48e2be63c8a0b212bbb8bd2906"><td class="tree-item-file-name"><i aria-label="tree" role="img" class="fa fa-fw fa-folder"></i> <a href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/tree/master/Design%20Files" class="str-truncated" data-qa-selector="file_name_link">
+      Design Files
+    </a> <!----> <!----> <!----></td> <td class="d-none d-sm-table-cell tree-commit"><a title="boilerplate code added
+" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/commit/cc681448a01b19d6825ad8502fbf7f226a43b6ab" class="gl-link str-truncated-100 tree-commit-link">
+      boilerplate code added
+
+    </a></td> <td class="tree-time-ago text-right"><time title="Jul 21, 2020 4:03pm EDT" class="">1 week ago</time></td></tr><tr class="tree-item file_gid://gitlab/Gitlab::Graphql::Representation::TreeEntry/5ed50b4be3b776969f1b15297827d82d45603f90"><td class="tree-item-file-name"><i aria-label="tree" role="img" class="fa fa-fw fa-folder"></i> <a href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/tree/master/public" class="str-truncated" data-qa-selector="file_name_link">
+      public
+    </a> <!----> <!----> <!----></td> <td class="d-none d-sm-table-cell tree-commit"><a title="boilerplate code added
+" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/commit/cc681448a01b19d6825ad8502fbf7f226a43b6ab" class="gl-link str-truncated-100 tree-commit-link">
+      boilerplate code added
+
+    </a></td> <td class="tree-time-ago text-right"><time title="Jul 21, 2020 4:03pm EDT" class="">1 week ago</time></td></tr><tr class="tree-item file_gid://gitlab/Gitlab::Graphql::Representation::TreeEntry/53b8933bf6dd98249d3ad2e24b59c597ff95ea00"><td class="tree-item-file-name"><i aria-label="tree" role="img" class="fa fa-fw fa-folder"></i> <a href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/tree/master/resources" class="str-truncated" data-qa-selector="file_name_link">
+      resources
+    </a> <!----> <!----> <!----></td> <td class="d-none d-sm-table-cell tree-commit"><a title="boilerplate code added
+" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/commit/cc681448a01b19d6825ad8502fbf7f226a43b6ab" class="gl-link str-truncated-100 tree-commit-link">
+      boilerplate code added
+
+    </a></td> <td class="tree-time-ago text-right"><time title="Jul 21, 2020 4:03pm EDT" class="">1 week ago</time></td></tr><tr class="tree-item file_gid://gitlab/Gitlab::Graphql::Representation::TreeEntry/40b878db5b1c97fc77049537a71bb2e249abe5dc"><td class="tree-item-file-name"><i aria-label="blob" role="img" class="fa fa-fw fa-file-text-o"></i> <a href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/blob/master/.gitignore" data-qa-selector="file_name_link" class="str-truncated">
+      .gitignore
+    </a> <!----> <!----> <!----></td> <td class="d-none d-sm-table-cell tree-commit"><a title="boilerplate code added
+" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/commit/cc681448a01b19d6825ad8502fbf7f226a43b6ab" class="gl-link str-truncated-100 tree-commit-link">
+      boilerplate code added
+
+    </a></td> <td class="tree-time-ago text-right"><time title="Jul 21, 2020 4:03pm EDT" class="">1 week ago</time></td></tr><tr class="tree-item file_gid://gitlab/Gitlab::Graphql::Representation::TreeEntry/c4b5382a4521f2a5951d1ed863a73650f09c4130"><td class="tree-item-file-name"><i aria-label="blob" role="img" class="fa fa-fw fa-file-text-o"></i> <a href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/blob/master/README.md" data-qa-selector="file_name_link" class="str-truncated">
+      README.md
+    </a> <!----> <!----> <!----></td> <td class="d-none d-sm-table-cell tree-commit"><a title="boilerplate code added
+" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/commit/cc681448a01b19d6825ad8502fbf7f226a43b6ab" class="gl-link str-truncated-100 tree-commit-link">
+      boilerplate code added
+
+    </a></td> <td class="tree-time-ago text-right"><time title="Jul 21, 2020 4:03pm EDT" class="">1 week ago</time></td></tr><tr class="tree-item file_gid://gitlab/Gitlab::Graphql::Representation::TreeEntry/b32c932fd95bdb667b00beee52650cfebede9b6a"><td class="tree-item-file-name"><i aria-label="blob" role="img" class="fa fa-fw fa-file-text-o"></i> <a href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/blob/master/mix-manifest.json" data-qa-selector="file_name_link" class="str-truncated">
+      mix-manifest.json
+    </a> <!----> <!----> <!----></td> <td class="d-none d-sm-table-cell tree-commit"><a title="boilerplate code added
+" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/commit/cc681448a01b19d6825ad8502fbf7f226a43b6ab" class="gl-link str-truncated-100 tree-commit-link">
+      boilerplate code added
+
+    </a></td> <td class="tree-time-ago text-right"><time title="Jul 21, 2020 4:03pm EDT" class="">1 week ago</time></td></tr><tr class="tree-item file_gid://gitlab/Gitlab::Graphql::Representation::TreeEntry/d6fcae50663331519a6ecbabaa19616f131ac0e8"><td class="tree-item-file-name"><i aria-label="blob" role="img" class="fa fa-fw fa-file-text-o"></i> <a href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/blob/master/package-lock.json" data-qa-selector="file_name_link" class="str-truncated">
+      package-lock.json
+    </a> <!----> <!----> <!----></td> <td class="d-none d-sm-table-cell tree-commit"><a title="boilerplate code added
+" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/commit/cc681448a01b19d6825ad8502fbf7f226a43b6ab" class="gl-link str-truncated-100 tree-commit-link">
+      boilerplate code added
+
+    </a></td> <td class="tree-time-ago text-right"><time title="Jul 21, 2020 4:03pm EDT" class="">1 week ago</time></td></tr><tr class="tree-item file_gid://gitlab/Gitlab::Graphql::Representation::TreeEntry/6cbc9492da1ae6038a2c25a60125593fd62d13e1"><td class="tree-item-file-name"><i aria-label="blob" role="img" class="fa fa-fw fa-file-text-o"></i> <a href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/blob/master/package.json" data-qa-selector="file_name_link" class="str-truncated">
+      package.json
+    </a> <!----> <!----> <!----></td> <td class="d-none d-sm-table-cell tree-commit"><a title="boilerplate code added
+" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/commit/cc681448a01b19d6825ad8502fbf7f226a43b6ab" class="gl-link str-truncated-100 tree-commit-link">
+      boilerplate code added
+
+    </a></td> <td class="tree-time-ago text-right"><time title="Jul 21, 2020 4:03pm EDT" class="">1 week ago</time></td></tr><tr class="tree-item file_gid://gitlab/Gitlab::Graphql::Representation::TreeEntry/ba1b6b993bdcacceb17f72f0548b830e4621180a"><td class="tree-item-file-name"><i aria-label="blob" role="img" class="fa fa-fw fa-file-text-o"></i> <a href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/blob/master/webpack.mix.js" data-qa-selector="file_name_link" class="str-truncated">
+      webpack.mix.js
+    </a> <!----> <!----> <!----></td> <td class="d-none d-sm-table-cell tree-commit"><a title="boilerplate code added
+" href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/commit/cc681448a01b19d6825ad8502fbf7f226a43b6ab" class="gl-link str-truncated-100 tree-commit-link">
+      boilerplate code added
+
+    </a></td> <td class="tree-time-ago text-right"><time title="Jul 21, 2020 4:03pm EDT" class="">1 week ago</time></td></tr> <!----></tbody></table></div></div> <article class="file-holder limited-width-container readme-holder"><div class="js-file-title file-title-flex-parent"><div class="file-header-content"><i aria-hidden="true" class="fa fa-file-text-o fa-fw"></i> <a href="https://gitlab.sfp.cc/sfp/sfp-frontend-assessment/-/blob/master/README.md" class="gl-link"><strong>README.md</strong></a></div></div> <div class="blob-viewer"><div><div class="blob-viewer" data-rich-type="markup" data-type="rich">
+<div class="file-content md md-file">
+<h3 data-sourcepos="1:1-1:9" dir="auto">
+<a id="user-content-setup" class="anchor" href="#setup" aria-hidden="true"></a>Setup</h3>
+<ol data-sourcepos="2:1-5:0" dir="auto">
+<li data-sourcepos="2:1-2:64"><code>git clone git@gitlab.sfp.cc:sfp/sfp-frontend-assessment.git</code></li>
+<li data-sourcepos="3:1-3:16"><code>npm install</code></li>
+<li data-sourcepos="4:1-5:0"><code>npm run watch</code></li>
+</ol>
+<h3 data-sourcepos="6:1-6:32" dir="auto">
+<a id="user-content-functionality-of-application" class="anchor" href="#functionality-of-application" aria-hidden="true"></a>Functionality of Application</h3>
+<p data-sourcepos="7:1-7:42" dir="auto">Here is how the application must function:</p>
+<ul data-sourcepos="8:1-11:0" dir="auto">
+<li data-sourcepos="8:1-8:70">Genres to include: Action, Animation, Crime, Drama, Fantasy, Horror.</li>
+<li data-sourcepos="9:1-9:38">Movies should populate from the API.</li>
+<li data-sourcepos="10:1-11:0">When a genre or pagination button is clicked, a request should be sent to the API, and then repopulate the movie list.</li>
+</ul>
+<h3 data-sourcepos="12:1-12:24" dir="auto">
+<a id="user-content-general-requirements" class="anchor" href="#general-requirements" aria-hidden="true"></a>General Requirements</h3>
+<ul data-sourcepos="13:1-17:0" dir="auto">
+<li data-sourcepos="13:1-13:78">Webpage must <strong>NOT</strong> use a CSS framework such as Bootstrap, Foundation, etc.</li>
+<li data-sourcepos="14:1-14:62">Webpage <strong>must be responsive</strong>. Mobile designs are provided.</li>
+<li data-sourcepos="15:1-15:73">You may complete the assessment in any frontend framework (or lack of).</li>
+<li data-sourcepos="16:1-17:0">We have provided boilerplate code to help you get started (we are using Vue.js), you can scrap it all or build off of it.</li>
+</ul>
+<h3 data-sourcepos="18:1-18:11" dir="auto">
+<a id="user-content-api-use" class="anchor" href="#api-use" aria-hidden="true"></a>API Use</h3>
+<p data-sourcepos="19:1-21:101" dir="auto">First, you must <a href="https://www.themoviedb.org/login" rel="nofollow noreferrer noopener" target="_blank">login</a> or <a href="https://www.themoviedb.org/account/signup" rel="nofollow noreferrer noopener" target="_blank">create an account</a> with TMDb.
+To get TMDb API token, visit the API tab in your <a href="https://www.themoviedb.org/settings/api" rel="nofollow noreferrer noopener" target="_blank">account settings</a>.
+Once you have landed on the API details page, click to generate an API key at the bottom of the page.</p>
+<p data-sourcepos="23:1-23:140" dir="auto">You will need to figure out 
+on your own how to use the API token, as well as what route you will 
+need to use to generate the grid of movies.</p>
+<h3 data-sourcepos="25:1-25:20" dir="auto">
+<a id="user-content-style-guidelines" class="anchor" href="#style-guidelines" aria-hidden="true"></a>Style Guidelines</h3>
+<ul data-sourcepos="26:1-29:0" dir="auto">
+<li data-sourcepos="26:1-26:32">Grid has a max-width of 1200px</li>
+<li data-sourcepos="27:1-27:86">Please match the designs provided in the "Design Files" folder as close as possible.</li>
+<li data-sourcepos="28:1-29:0"><em>PLEASE NOTE: The design files are 
+just examples and only uses one movie title. Your application should 
+show multiple movie titles from the API.</em></li>
+</ul>
+<h3 data-sourcepos="30:1-30:10" dir="auto">
+<a id="user-content-colors" class="anchor" href="#colors" aria-hidden="true"></a>Colors</h3>
+<ul data-sourcepos="31:1-35:0" dir="auto">
+<li data-sourcepos="31:1-31:28">Gray (Gray text): #b8b8b8</li>
+<li data-sourcepos="32:1-32:16">Black: #3f3f3f</li>
+<li data-sourcepos="33:1-33:57">Light Gray (The gray background on pagination): #009fd9</li>
+<li data-sourcepos="34:1-35:0">Blue (The blue background on pagination): #009fd9</li>
+</ul>
+<h3 data-sourcepos="36:1-36:14" dir="auto">
+<a id="user-content-font-sizes" class="anchor" href="#font-sizes" aria-hidden="true"></a>Font Sizes</h3>
+<ul data-sourcepos="37:1-45:0" dir="auto">
+<li data-sourcepos="37:1-37:18">Navigation: 16px</li>
+<li data-sourcepos="38:1-38:23">Main Title (H1): 72px</li>
+<li data-sourcepos="39:1-39:23">Subheading (H2): 62px</li>
+<li data-sourcepos="40:1-40:14">Button: 18px</li>
+<li data-sourcepos="41:1-41:22">Paragraph Text: 16px</li>
+<li data-sourcepos="42:1-42:20">Movie Titles: 18px</li>
+<li data-sourcepos="43:1-43:21">Movie Ratings: 14px</li>
+<li data-sourcepos="44:1-45:0">Pagination: 16px</li>
+</ul>
+<h3 data-sourcepos="46:1-46:17" dir="auto">
+<a id="user-content-font-families" class="anchor" href="#font-families" aria-hidden="true"></a>Font Families</h3>
+<ul data-sourcepos="47:1-56:0" dir="auto">
+<li data-sourcepos="47:1-47:40">Navigation (Current Genre): Lato Black</li>
+<li data-sourcepos="48:1-48:41">Navigation (Other Genres): Lato Regular</li>
+<li data-sourcepos="49:1-49:31">Main Title (H1): Lato Regular</li>
+<li data-sourcepos="50:1-50:29">Subheading (H2): Lato Black</li>
+<li data-sourcepos="51:1-51:22">Button: Lato Regular</li>
+<li data-sourcepos="52:1-52:30">Paragraph Text: Lato Regular</li>
+<li data-sourcepos="53:1-53:25">Movie Titles: Lato Bold</li>
+<li data-sourcepos="54:1-54:29">Movie Ratings: Lato Regular</li>
+<li data-sourcepos="55:1-56:0">Pagination: Lato Regular</li>
+</ul>
+<h3 data-sourcepos="57:1-57:17" dir="auto">
+<a id="user-content-when-complete" class="anchor" href="#when-complete" aria-hidden="true"></a>When complete</h3>
+<ul data-sourcepos="58:1-58:98" dir="auto">
+<li data-sourcepos="58:1-58:98">Send an email to <a href="mailto:meeks@sfp.net">meeks@sfp.net</a> containing a zipped file of the project or link to a Github repo.</li>
+</ul>
+</div>
+
+</div>
+</div></div></article></div>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+</body></html>
