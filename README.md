@@ -14,13 +14,14 @@
   - jest
   - pug
   - router
+  - scss
   - slots
   - vuex
 
 ## To run
 ### To start
 ```sudo ./install.sh -u```
-accessible through localhost:80
+accessible through localhost:8080
 
 ### To stop
 ```sudo ./install.sh -d```
@@ -40,6 +41,11 @@ accessible through localhost:80
 > This enables scss for style tags
 >
 > Example style lang="scss"
+>
+> scss files are found `src/assets/scss`
+>
+```npm i sass-loader node-sass```
+> This enables unit test
 >
 ```npm i jest```
 > This enables unit test for vue components
