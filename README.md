@@ -26,6 +26,9 @@ accessible through localhost:8080
 ### To stop
 ```sudo ./install.sh -d```
 
+## To see help
+`sudo ./install.sh -h`
+
 ## Project setup
 This is used to make ajax calls
 
